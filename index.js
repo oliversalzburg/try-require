@@ -1,13 +1,13 @@
 module.exports = tryRequire;
 
-function tryRequire(moduleReference) {
-	var module = null;
+function tryRequire( moduleReference ) {
+	var requiredModule = null;
 	try {
-		module = require(moduleReference);
+		requiredModule = require( moduleReference );
 
-	} catch(error) {
-		this.lastError = error;
+	} catch( error ) {
+		module.exports.lastError = error;
 	}
 
-	return module;
+	return requiredModule;
 }
