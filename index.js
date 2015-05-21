@@ -1,6 +1,6 @@
-module.exports = tryRequire;
+module.exports = attemptRequire;
 
-function tryRequire( moduleReference ) {
+function attemptRequire( moduleReference ) {
 	var requiredModule = null;
 	try {
 		requiredModule = require( moduleReference );

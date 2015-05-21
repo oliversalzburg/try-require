@@ -1,5 +1,5 @@
 {
-  "name": "try-require",
+  "name": "attempt-require",
   "version": "1.0.0",
   "description": "try-catch wrapper around require()",
   "main": "index.js",
